@@ -131,6 +131,10 @@ header {
   padding: 10px;
 }
 
+.header-content .icon i {
+  cursor: pointer;
+}
+
 .cart::after {
   content: "0";
   color: white;
