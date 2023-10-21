@@ -7,13 +7,11 @@
 
 body {
   font-family: "pt-sans", sans-serif;
-  
 }
 
 /************ start header ***********/
 header {
   padding: 40px 0;
-  /* height: 10vh; */
 }
 .container {
   width: 80%;
@@ -203,6 +201,7 @@ header {
 }
 .category-card-container .card .card-content p {
   font-size: 19px;
+  font-weight: bold;
 }
 .category-card-container .card .card-content i {
   position: absolute;
@@ -262,7 +261,7 @@ header {
   transition: 0.5s;
 }
 .discount .discount-card:hover {
-  transform:scaleZ();
+  transform: scaleZ();
 }
 .discount .discount-card h3 {
   font-size: 20px;
@@ -295,3 +294,69 @@ header {
 }
 
 /********** End discount ***********/
+/******** start featured section *************/
+.feature {
+  width: 100%;
+}
+.featured-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.featured-content h2 {
+  padding-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+}
+.featured-content h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  background-color: #7b5244;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.featured-content h2:hover::before {
+  width: 100%;
+}
+
+.featured-content .featured-list {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.featured-content .featured-list li {
+  list-style-type: none;
+}
+.featured-content .featured-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.featured-content .featured-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
+}
+.featured-card-container .featured-card {
+}
+.featured-card-container .featured-card img {
+}
+.featured-card .product-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.featured-card .product-info .stars-cont .active {
+  color: yellow;
+}
+/******** End featured section *************/
