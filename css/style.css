@@ -308,21 +308,23 @@ header {
   text-align: center;
   border-right: 1px solid #7b5244;
 }
+.term-item:last-child {
+  border-right: none;
+}
 .term-icon {
   background-image: url(../image/service-icon.png);
   height: 55px;
   background-repeat: no-repeat;
+  transition: all 0.5s;
 }
 .term-icon-1 {
   background-position: center 5px;
-  transition: all 0.5s;
 }
 .term-item:hover .term-icon-1 {
   background-position: center -86px;
 }
 .term-icon-2 {
   background-position: center -180px;
-  transition: all 0.5s;
 }
 .term-item:hover .term-icon-2 {
   background-position: center -273px;
@@ -330,7 +332,6 @@ header {
 
 .term-icon-3 {
   background-position: center -366px;
-  transition: all 0.5s;
 }
 .term-item:hover .term-icon-3 {
   background-position: center -455px;
@@ -338,14 +339,12 @@ header {
 
 .term-icon-4 {
   background-position: center -549px;
-  transition: all 0.5s;
 }
 .term-item:hover .term-icon-4 {
   background-position: center -640px;
 }
 .term-icon-5 {
   background-position: center -734px;
-  transition: all 0.5s;
 }
 .term-item:hover .term-icon-5 {
   background-position: center -825px;
