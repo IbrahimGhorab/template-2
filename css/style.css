@@ -216,6 +216,7 @@ header {
 .category-card-container .card:hover .card-content i {
   visibility: visible;
 }
+
 /********* end special category ************/
 
 /********** Start discount ***********/
@@ -254,6 +255,7 @@ header {
 }
 
 .discount .discount-card {
+  cursor: pointer;
   padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,7 +263,7 @@ header {
   transition: 0.5s;
 }
 .discount .discount-card:hover {
-  transform: scaleZ();
+  transform: scale(1.1, 1.1);
 }
 .discount .discount-card h3 {
   font-size: 20px;
@@ -294,6 +296,63 @@ header {
 }
 
 /********** End discount ***********/
+
+/********** Start terms article *********/
+.terms {
+  display: flex;
+  margin-bottom: 55px;
+}
+.term-item {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #7b5244;
+}
+.term-icon {
+  background-image: url(../image/service-icon.png);
+  height: 55px;
+  background-repeat: no-repeat;
+}
+.term-icon-1 {
+  background-position: center 5px;
+  transition: all 0.5s;
+}
+.term-item:hover .term-icon-1 {
+  background-position: center -86px;
+}
+.term-icon-2 {
+  background-position: center -180px;
+  transition: all 0.5s;
+}
+.term-item:hover .term-icon-2 {
+  background-position: center -273px;
+}
+
+.term-icon-3 {
+  background-position: center -366px;
+  transition: all 0.5s;
+}
+.term-item:hover .term-icon-3 {
+  background-position: center -455px;
+}
+
+.term-icon-4 {
+  background-position: center -549px;
+  transition: all 0.5s;
+}
+.term-item:hover .term-icon-4 {
+  background-position: center -640px;
+}
+.term-icon-5 {
+  background-position: center -734px;
+  transition: all 0.5s;
+}
+.term-item:hover .term-icon-5 {
+  background-position: center -825px;
+}
+
+/********** end terms article ***********/
+
 /******** start featured section *************/
 .feature {
   width: 100%;
