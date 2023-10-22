@@ -350,6 +350,10 @@ header {
   background-position: center -825px;
 }
 
+hr {
+  border: 1px solid #7b5244;
+}
+
 /********** end terms article ***********/
 
 /******** start featured section *************/
@@ -417,4 +421,45 @@ header {
 .featured-card .product-info .stars-cont .active {
   color: yellow;
 }
+.product-image {
+  position: relative;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.product-overlay ul {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 15px;
+}
+
+.product-overlay ul li {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+.product-overlay ul li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: blue;
+}
+
+.featured-card:hover .product-overlay {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+.featured-card:hover .product-overlay ul li {
+  transition-delay: 0.5s;
+  transform: scale(1.3, 1.3);
+}
+
 /******** End featured section *************/
