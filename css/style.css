@@ -189,6 +189,9 @@ header {
   display: flex;
   gap: 10px;
 }
+.card {
+  cursor: pointer;
+}
 .category-card-container .card img {
   margin-bottom: 25px;
 }
@@ -410,7 +413,8 @@ hr {
 }
 .featured-card-container .featured-card {
 }
-.featured-card-container .featured-card img {
+.featured-card {
+  cursor: pointer;
 }
 .featured-card .product-info {
   margin-top: 10px;
@@ -444,7 +448,7 @@ hr {
 
 .product-overlay ul li {
   list-style-type: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .product-overlay ul li a {
